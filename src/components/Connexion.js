@@ -9,7 +9,7 @@ class Connexion extends Component {
           placeholder='Pseudo'
           type="text"
           required/>
-          <button type='submit'></button>
+          <button type='submit'>GO</button>
         </form>
       </div>
     )
