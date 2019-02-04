@@ -82,7 +82,7 @@ body {
 .message > * {
 	padding: 5px 10px;
 	max-width: 75%;
-	border-radius: 2px;
+	border-radius: 15px;
 	margin: 10px 0;
 	overflow-wrap: break-word;
 	word-wrap: break-word;
@@ -106,7 +106,7 @@ body {
 }
 
 .user-message {
-	background-color: #2196F3;
+	background-color: rgb(243, 131, 33);
 	color: #fff;
 	align-self: flex-end;
 	position: relative;
@@ -116,11 +116,11 @@ body {
 	content: '';
 	position: absolute;
 	bottom: -7px;
-	right: 10px;
+	right: 15px;
 	width: 0;
-	border-width: 7px 0 0 10px;
+	border-width: 7px 0 0 9px;
 	border-style: solid;
-	border-color: #2196F3 transparent;
+	border-color: rgb(243, 131, 33) transparent;
 }
 
 
@@ -135,7 +135,7 @@ body {
 textarea {
 	box-sizing: border-box;
 	height: 120px;
-	border: 5px solid #2196F3;
+	border: 5px solid rgb(243, 131, 33);
 	border-width: 0 0 5px 0;
 	background-color: #ECEFF1;
 	outline: none;
@@ -152,11 +152,11 @@ button {
 	font-size: 20px;
 	border: none;
 	color: white;
-	background-color: #2196F3;
+	background-color: rgb(243, 131, 33);
 	margin-top: 10px;
 	padding: 10px;
 	cursor: pointer;
-	border-radius: 2px;
+	border-radius: 20px;
 }
 
 button:disabled {
