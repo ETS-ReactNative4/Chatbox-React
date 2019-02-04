@@ -8,7 +8,6 @@ class Formulaire extends Component {
     event.preventDefault()
   }
 
-
   handleChange = event => {
     const message = event.target.value
   this.setState({ message })

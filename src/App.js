@@ -4,6 +4,15 @@ import Formulaire from './components/Formulaire'
 import Message from './components/Message'
 
 class App extends Component {
+  state = {
+    messages: {}
+  }
+
+  addMessage = message => {
+    const messages = {...this.state.message }
+    messages[`message-${Date.now()}`] = message
+    this.setState({ messages })
+  }
   render () {
     return (
       <div className='box'> 
@@ -12,7 +21,8 @@ class App extends Component {
             <Message/>
           </div>
         </div>
-       <Formulaire/>
+       <Formulaire
+       addMessage={this.addMessage}/>
       </div>
     )
   }
