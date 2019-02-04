@@ -5,11 +5,12 @@ import Message from './components/Message'
 
 class App extends Component {
   state = {
-    messages: {}
+    messages: {},
+    pseudo: this.props.match.params.pseudo
   }
 
   addMessage = message => {
-    const messages = {...this.state.message }
+    const messages = {...this.state.messages }
     messages[`message-${Date.now()}`] = message
     this.setState({ messages })
   }
@@ -22,6 +23,7 @@ class App extends Component {
           </div>
         </div>
        <Formulaire
+       pseudo={this.state.pseudo}
        addMessage={this.addMessage}/>
       </div>
     )
