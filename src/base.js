@@ -1,5 +1,5 @@
-import Rebase from '../node_modules/re-base'; 
-import firebase from '../node_modules/@firebase/app';
+import Rebase from 're-base'; 
+import firebase from '@firebase/app';
 import '../node_modules/@firebase/database'
 
 const fireBaseApp = firebase.initializeApp({
