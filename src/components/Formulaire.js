@@ -13,7 +13,6 @@ class Formulaire extends Component {
       message: this.state.message
     }
     addMessage(message)
-
     this.setState({message:'', length})
   }
 

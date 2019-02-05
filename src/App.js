@@ -11,7 +11,7 @@ class App extends Component {
 
   addMessage = message => {
     const messages = {...this.state.messages }
-    messages[`message-${Date.now()}`] = message
+    messages[`message-${Date.now()}`] = message;
     this.setState({ messages })
   }
   render () {
@@ -19,6 +19,7 @@ class App extends Component {
     .keys(this.state.messages)
     .map(key => (
       <Message 
+      key={key}
       message={this.state.messages[key].message}
       pseudo={this.state.messages[key].pseudo} />
     ))
